@@ -1,2 +1,8 @@
 # AuraNest-Booking
-Basic Web App using FIgma (html,css, js FIles )
+
+Multi Media Project 
+
+Basic Web App
+  using FIgma (html,css, js FIles )
+Open Index.html
+  Thank You.
