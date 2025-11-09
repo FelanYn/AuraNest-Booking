@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up / Log In - AuraNest Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="signup-page">
+    <section class="animated-section" style="padding:0;margin-bottom:32px;">
+        <img src="images/signup-banner.jpg" alt="Sign Up Banner" style="width:100%;max-height:260px;object-fit:cover;animation:fadeIn 1.2s;border-radius:0 0 18px 18px;">
+    </section>
+    <header>
+        <div class="top-bar">
+            <h1><a href="index.html">AuraNest Booking</a></h1>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="signup.html" class="btn-nav active">Log In / Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <div class="form-container-centered">
+            <div class="form-header">
+                <h2>Guest Dashboard</h2>
+                <p>Log in or create an account to manage your bookings.</p>
+            </div>
+
+            <div class="card">
+                <form class="form-layout" action="dashboard.html">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="john.doe@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="••••••••" required>
+                    </div>
+
+                    <button type="submit" class="btn">Log In</button>
+                    
+                    <a href="dashboard.html" class="btn btn-secondary" style="width: 100%; text-align: center; margin-top: 10px;">Sign Up</a>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>

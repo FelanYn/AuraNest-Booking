@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboard - AuraNest Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="dashboard-page">
+    <!-- Banner removed -->
+    <header>
+        <div class="top-bar">
+            <h1><a href="index.html">AuraNest Booking</a></h1>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="payment.html">Make Payment</a></li>
+                <li><a href="index.html" class="btn-nav-secondary">Log Out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2 class="page-title">My Dashboard</h2>
+        <p class="page-subtitle">Manage your bookings and profile</p>
+
+        <section class="dashboard-summary">
+            <div class="summary-card" style="animation-delay: 0.1s;">
+                <i class="fa-solid fa-plane-departure"></i>
+                <div>
+                    <div class="label">Upcoming Trips</div>
+                    <div class="value">2</div>
+                </div>
+            </div>
+            <div class="summary-card" style="animation-delay: 0.2s;">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                    <div class="label">Past Stays</div>
+                    <div class="value">1</div>
+                </div>
+            </div>
+            <div class="summary-card" style="animation-delay: 0.3s;">
+                <i class="fa-solid fa-star"></i>
+                <div>
+                    <div class="label">Member Status</div>
+                    <div class="value gold">Gold Member</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="booking-section">
+            <h3>Upcoming Bookings</h3>
+            <div class="card booking-card" style="animation-delay: 0.4s;">
+                <div class="booking-card-info">
+                    <img src="images/kandy-hotel.jpg" alt="Kandy Lake Resort" class="booking-thumb">
+                    <div>
+                        <h4>Kandy Lake Resort</h4>
+                        <p><i class="fa-solid fa-map-marker-alt"></i> Kandy, Sri Lanka</p>
+                    </div>
+                </div>
+                <div class="booking-card-dates">
+                    <p><strong>Check-in:</strong> <span>12/15/2025</span></p>
+                </div>
+                <div class="booking-card-actions">
+                    <span class="booking-status status-confirmed">Confirmed</span>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+            <div class="card booking-card" style="animation-delay: 0.5s;">
+                <div class="booking-card-info">
+                    <img src="images/colombo-hotel.jpg" alt="Colombo Grand Hotel" class="booking-thumb">
+                    <div>
+                        <h4>Colombo Grand Hotel</h4>
+                        <p><i class="fa-solid fa-map-marker-alt"></i> Colombo, Sri Lanka</p>
+                    </div>
+                </div>
+                <div class="booking-card-dates">
+                    <p><strong>Check-in:</strong> <span>1/10/2026</span></p>
+                </div>
+                <div class="booking-card-actions">
+                    <span class="booking-status status-confirmed">Confirmed</span>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+            <div class="card booking-card" style="animation-delay: 0.55s;">
+                <div class="booking-card-info">
+                    <img src="images/ella-hotel.jpg" alt="Ella Mountain Retreat" class="booking-thumb">
+                    <div>
+                        <h4>Ella Mountain Retreat</h4>
+                        <p><i class="fa-solid fa-map-marker-alt"></i> Ella, Sri Lanka</p>
+                    </div>
+                </div>
+                <div class="booking-card-dates">
+                    <p><strong>Check-in:</strong> <span>2/20/2026</span></p>
+                </div>
+                <div class="booking-card-actions">
+                    <span class="booking-status status-confirmed">Confirmed</span>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="booking-section">
+            <h3>Past Bookings (Booking History)</h3>
+            <div class="card booking-card" style="animation-delay: 0.6s;">
+                <div class="booking-card-info">
+                    <img src="images/Jaffna-Hotel.jpeg" alt="Jaffna Heritage Hotel" class="booking-thumb">
+                    <div>
+                        <h4>Jaffna Heritage Hotel</h4>
+                        <p><i class="fa-solid fa-map-marker-alt"></i> Jaffna, Sri Lanka</p>
+                    </div>
+                </div>
+                <div class="booking-card-dates">
+                    <p><strong>Check-out:</strong> <span>10/23/2025</span></p>
+                </div>
+                <div class="booking-card-actions">
+                    <span class="booking-status status-completed">Completed</span>
+                    <a href="reviews.html" class="btn">Write Review</a>
+                </div>
+            </div>
+            <div class="card booking-card" style="animation-delay: 0.65s;">
+                <div class="booking-card-info">
+                    <img src="images/Galle-Hotel.jpg" alt="Galle Fort Resort" class="booking-thumb">
+                    <div>
+                        <h4>Galle Fort Resort</h4>
+                        <p><i class="fa-solid fa-map-marker-alt"></i> Galle, Sri Lanka</p>
+                    </div>
+                </div>
+                <div class="booking-card-dates">
+                    <p><strong>Check-out:</strong> <span>8/12/2025</span></p>
+                </div>
+                <div class="booking-card-actions">
+                    <span class="booking-status status-completed">Completed</span>
+                    <a href="reviews.html" class="btn">Write Review</a>
+                </div>
+            </div>
+            <div class="card booking-card" style="animation-delay: 0.7s;">
+                <div class="booking-card-info">
+                    <img src="images/Rathnapura-Hotel.jpeg" alt="Kurunegala City Hotel" class="booking-thumb">
+                    <div>
+                        <h4>Kurunegala City Hotel</h4>
+                        <p><i class="fa-solid fa-map-marker-alt"></i> Kurunegala, Sri Lanka</p>
+                    </div>
+                </div>
+                <div class="booking-card-dates">
+                    <p><strong>Check-out:</strong> <span>5/30/2025</span></p>
+                </div>
+                <div class="booking-card-actions">
+                    <span class="booking-status status-completed">Completed</span>
+                    <a href="reviews.html" class="btn">Write Review</a>
+                </div>
+            </div>
+            <div class="card booking-card" style="animation-delay: 0.75s;">
+                <div class="booking-card-info">
+                    <img src="images/Kurunagala-Hotel.jpg" alt="Rathnapura Gem Inn" class="booking-thumb">
+                    <div>
+                        <h4>Rathnapura Gem Inn</h4>
+                        <p><i class="fa-solid fa-map-marker-alt"></i> Rathnapura, Sri Lanka</p>
+                    </div>
+                </div>
+                <div class="booking-card-dates">
+                    <p><strong>Check-out:</strong> <span>3/18/2025</span></p>
+                </div>
+                <div class="booking-card-actions">
+                    <span class="booking-status status-completed">Completed</span>
+                    <a href="reviews.html" class="btn">Write Review</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

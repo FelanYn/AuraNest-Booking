@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search - AuraNest Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="search-page">
+
+    <header>
+        <div class="top-bar">
+            <h1><a href="index.html">AuraNest Booking</a></h1>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html" class="active">Search</a></li>
+                <li><a href="signup.html" class="btn-nav">Log In / Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="support-header">
+            <h2>Search Hotels</h2>
+            <p>This is the search page. A search form would go here.</p>
+        </div>
+    </main>
+
+    <main>
+        <section class="search-section animated-section">
+            <div class="search-container">
+                <h2 class="animated-title">Find Your Stay</h2>
+                <form id="main-search" class="main-search-form" action="search.html" method="get" novalidate>
+                    <div class="field-row">
+                        <label class="visually-hidden" for="destination-main">Destination</label>
+                        <input id="destination-main" name="q" type="text" placeholder="City, hotel, or landmark" required>
+
+                        <label class="visually-hidden" for="checkin-main">Check-in</label>
+                        <input id="checkin-main" name="checkin" type="date" required>
+
+                        <label class="visually-hidden" for="checkout-main">Check-out</label>
+                        <input id="checkout-main" name="checkout" type="date" required>
+
+                        <label class="visually-hidden" for="guests-main">Guests</label>
+                        <select id="guests-main" name="guests" aria-label="Number of guests">
+                            <option value="1">1 guest</option>
+                            <option value="2" selected>2 guests</option>
+                            <option value="3">3 guests</option>
+                            <option value="4">4 guests</option>
+                        </select>
+
+                        <button class="btn btn-accent" type="submit">Search</button>
+                    </div>
+                    <div id="main-error" class="error-msg" role="alert" aria-live="assertive" hidden></div>
+                </form>
+            </div>
+        </section>
+        <section class="search-hotels animated-section">
+            <h3 class="section-title">Popular Hotels</h3>
+            <div class="hotels-grid">
+                <div class="hotel-card animated-card">
+                    <img src="images/colombo-hotel.jpg" alt="Colombo Hotel" class="hotel-img animated-img">
+                    <h4>Colombo</h4>
+                </div>
+                <div class="hotel-card animated-card">
+                    <img src="images/ella-hotel.jpg" alt="Ella Hotel" class="hotel-img animated-img">
+                    <h4>Ella</h4>
+                </div>
+                <div class="hotel-card animated-card">
+                    <img src="images/kandy-hotel.jpg" alt="Kandy Hotel" class="hotel-img animated-img">
+                    <h4>Kandy</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+</html>
